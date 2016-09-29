@@ -4,7 +4,7 @@
 <array>
 	<string>UIWebView</string>
 	<string>UIPickerView</string>
-	<string>UIPickerView</string>
+	<string>UICollectionView</string>
 	<string>UIPickerView</string>
 	<string>UIPickerView</string>
 	<string>UIPickerView</string>

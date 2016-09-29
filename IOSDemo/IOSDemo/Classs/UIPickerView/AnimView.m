@@ -27,9 +27,6 @@
     if (self) {
          [self setBackgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.4]];
         _view = [[UIView alloc]initWithFrame:CGRectMake(0, self.height,self.width , 250)];
-        
-        
-        
         [self addSubview:_view];
         _pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0,self.width , 220)];
         [_view addSubview:_pickerView];

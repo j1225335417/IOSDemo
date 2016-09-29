@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "AppWebViewController.h"
 #import "UIPickerController.h"
-
+#import "MJRefreshNormalHeader.h"
+#import "MJRefreshGifHeader.h"
+#import "CollectionControllerViewController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSArray *dataArray;
 @property(nonatomic,strong)UITableView *tableView;
@@ -35,10 +37,14 @@ static ViewController *viewController;
     [self initDataArray];
     _tableView = [[UITableView alloc]initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     [self.view addSubview:_tableView];
+    _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self initDataArray];
+    }];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [_tableView registerClass:[UITableViewCell class]  forCellReuseIdentifier:@"cell"];
+    [_tableView.mj_header beginRefreshing];
     
 }
 
@@ -46,6 +52,8 @@ static ViewController *viewController;
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"functionList" ofType:@"plist"];
     _dataArray = [[NSArray alloc]initWithContentsOfFile:plistPath];
     NSLog(@"%@",_dataArray);
+    [_tableView.mj_header endRefreshing];
+    [_tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,6 +78,9 @@ static ViewController *viewController;
         [self.navigationController pushViewController:vc animated:NO];
     }else if(1 == indexPath.row){
         UIPickerController *vc = [[UIPickerController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(2 == indexPath.row){
+        CollectionControllerViewController * vc = [[CollectionControllerViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

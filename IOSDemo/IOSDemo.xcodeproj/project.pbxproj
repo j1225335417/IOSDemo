@@ -29,6 +29,8 @@
 		F66087271D9CC8A300DD202C /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = F66087261D9CC8A300DD202C /* Tools.m */; };
 		F660872B1D9CE65900DD202C /* UIPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F660872A1D9CE65900DD202C /* UIPickerController.m */; };
 		F66087351D9CF5B400DD202C /* AnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = F66087341D9CF5B400DD202C /* AnimView.m */; };
+		F660873C1D9D316400DD202C /* CollectionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F660873B1D9D316400DD202C /* CollectionControllerViewController.m */; };
+		F660873F1D9D319300DD202C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F660873E1D9D319300DD202C /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +76,10 @@
 		F66087321D9CEC9700DD202C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F66087331D9CF5B400DD202C /* AnimView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimView.h; sourceTree = "<group>"; };
 		F66087341D9CF5B400DD202C /* AnimView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimView.m; sourceTree = "<group>"; };
+		F660873A1D9D316400DD202C /* CollectionControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionControllerViewController.h; sourceTree = "<group>"; };
+		F660873B1D9D316400DD202C /* CollectionControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionControllerViewController.m; sourceTree = "<group>"; };
+		F660873D1D9D319300DD202C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		F660873E1D9D319300DD202C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		F64FAE691D9BD6F200E7520F /* Classs */ = {
 			isa = PBXGroup;
 			children = (
+				F66087391D9D316400DD202C /* UICollectionView */,
 				F66087281D9CE62500DD202C /* UIPickerView */,
 				F64FAE6B1D9BD71900E7520F /* UIWebView */,
 			);
@@ -304,6 +311,17 @@
 			path = Currency;
 			sourceTree = "<group>";
 		};
+		F66087391D9D316400DD202C /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F660873A1D9D316400DD202C /* CollectionControllerViewController.h */,
+				F660873B1D9D316400DD202C /* CollectionControllerViewController.m */,
+				F660873D1D9D319300DD202C /* CollectionViewCell.h */,
+				F660873E1D9D319300DD202C /* CollectionViewCell.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,11 +456,13 @@
 				F64FAE791D9BD9C600E7520F /* UIColor+Hex.m in Sources */,
 				F66087271D9CC8A300DD202C /* Tools.m in Sources */,
 				F64FAE591D9BD57E00E7520F /* ViewController.m in Sources */,
+				F660873F1D9D319300DD202C /* CollectionViewCell.m in Sources */,
 				F66087231D9CC1B900DD202C /* NJKWebViewProgressView.m in Sources */,
 				F64FAE561D9BD57E00E7520F /* AppDelegate.m in Sources */,
 				F64FAE761D9BD93100E7520F /* UIColor+APPColor.m in Sources */,
 				F66087191D9CBDC400DD202C /* APPHint.m in Sources */,
 				F64FAE531D9BD57E00E7520F /* main.m in Sources */,
+				F660873C1D9D316400DD202C /* CollectionControllerViewController.m in Sources */,
 				F660872B1D9CE65900DD202C /* UIPickerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
