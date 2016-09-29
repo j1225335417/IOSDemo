@@ -1,1 +1,3 @@
 pod 'MJRefresh'             #下拉刷新
+pod 'SVProgressHUD'
+pod 'SDAutoLayout', '~> 1.52'

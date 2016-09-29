@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AppWebViewController.h"
+#import "UIPickerController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSArray *dataArray;
@@ -67,6 +68,9 @@ static ViewController *viewController;
     if(0 == indexPath.row){
         AppWebViewController *vc = [[AppWebViewController alloc]init];
         [self.navigationController pushViewController:vc animated:NO];
+    }else if(1 == indexPath.row){
+        UIPickerController *vc = [[UIPickerController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
