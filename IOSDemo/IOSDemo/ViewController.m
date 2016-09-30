@@ -12,6 +12,11 @@
 #import "MJRefreshNormalHeader.h"
 #import "MJRefreshGifHeader.h"
 #import "CollectionControllerViewController.h"
+#import "TableViewScrollHeader.h"
+
+
+#import "Person.h"
+#import "Book.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSArray *dataArray;
 @property(nonatomic,strong)UITableView *tableView;
@@ -45,7 +50,11 @@ static ViewController *viewController;
     _tableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [_tableView registerClass:[UITableViewCell class]  forCellReuseIdentifier:@"cell"];
     [_tableView.mj_header beginRefreshing];
-    
+//    Person *p = [[Person alloc]init];
+//    Book* b = [[Book alloc]init];
+//    
+//    [p setBook:b];
+//    [p dealloc];
 }
 
 -(void) initDataArray{
@@ -81,6 +90,9 @@ static ViewController *viewController;
         [self.navigationController pushViewController:vc animated:YES];
     }else if(2 == indexPath.row){
         CollectionControllerViewController * vc = [[CollectionControllerViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (3 == indexPath.row){
+        TableViewScrollHeader * vc = [[TableViewScrollHeader alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

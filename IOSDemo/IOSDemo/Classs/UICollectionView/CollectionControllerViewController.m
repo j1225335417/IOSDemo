@@ -36,7 +36,7 @@
     [_collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     _collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshAction)];
     [_collectionView.mj_header beginRefreshing];
-
+   
     
 }
 

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D9B8B13147AA5C241402BAB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CFE87012EF0091B7FFC7EA /* libPods.a */; };
+		F62DDD161D9E039D00810CC0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD151D9E039D00810CC0 /* Person.m */; };
+		F62DDD191D9E03B100810CC0 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD181D9E03B100810CC0 /* Book.m */; };
+		F62DDD1D1D9E0D2D00810CC0 /* TableViewScrollHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD1C1D9E0D2D00810CC0 /* TableViewScrollHeader.m */; };
+		F62DDD201D9E12C500810CC0 /* HeadScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */; };
 		F64FAE531D9BD57E00E7520F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE521D9BD57E00E7520F /* main.m */; };
 		F64FAE561D9BD57E00E7520F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE551D9BD57E00E7520F /* AppDelegate.m */; };
 		F64FAE591D9BD57E00E7520F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE581D9BD57E00E7520F /* ViewController.m */; };
@@ -37,6 +41,14 @@
 		04CFE87012EF0091B7FFC7EA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD0979C17E4C190F8D3742D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D1C6F2C1DBABDFED8EB2E46F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F62DDD141D9E039D00810CC0 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F62DDD151D9E039D00810CC0 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F62DDD171D9E03B100810CC0 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F62DDD181D9E03B100810CC0 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		F62DDD1B1D9E0D2D00810CC0 /* TableViewScrollHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewScrollHeader.h; sourceTree = "<group>"; };
+		F62DDD1C1D9E0D2D00810CC0 /* TableViewScrollHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewScrollHeader.m; sourceTree = "<group>"; };
+		F62DDD1E1D9E12C500810CC0 /* HeadScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadScrollView.h; sourceTree = "<group>"; };
+		F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadScrollView.m; sourceTree = "<group>"; };
 		F64FAE4E1D9BD57E00E7520F /* IOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64FAE521D9BD57E00E7520F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64FAE541D9BD57E00E7520F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +123,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F62DDD131D9E037F00810CC0 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F62DDD141D9E039D00810CC0 /* Person.h */,
+				F62DDD151D9E039D00810CC0 /* Person.m */,
+				F62DDD171D9E03B100810CC0 /* Book.h */,
+				F62DDD181D9E03B100810CC0 /* Book.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		F62DDD1A1D9E0D1600810CC0 /* UITableViewScrollHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F62DDD1B1D9E0D2D00810CC0 /* TableViewScrollHeader.h */,
+				F62DDD1C1D9E0D2D00810CC0 /* TableViewScrollHeader.m */,
+				F62DDD1E1D9E12C500810CC0 /* HeadScrollView.h */,
+				F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */,
+			);
+			path = UITableViewScrollHeader;
+			sourceTree = "<group>";
+		};
 		F64FAE451D9BD57E00E7520F = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +167,7 @@
 		F64FAE501D9BD57E00E7520F /* IOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F62DDD131D9E037F00810CC0 /* Test */,
 				F66087241D9CC89700DD202C /* Utils */,
 				F64FAE6E1D9BD7F800E7520F /* Custom */,
 				F64FAE6C1D9BD77600E7520F /* Base */,
@@ -162,6 +197,7 @@
 		F64FAE691D9BD6F200E7520F /* Classs */ = {
 			isa = PBXGroup;
 			children = (
+				F62DDD1A1D9E0D1600810CC0 /* UITableViewScrollHeader */,
 				F66087391D9D316400DD202C /* UICollectionView */,
 				F66087281D9CE62500DD202C /* UIPickerView */,
 				F64FAE6B1D9BD71900E7520F /* UIWebView */,
@@ -452,13 +488,17 @@
 				F66087151D9CB9BB00DD202C /* WebViewJavascriptBridge.m in Sources */,
 				F64FAE711D9BD8AA00E7520F /* BaseNavigationController.m in Sources */,
 				F66087221D9CC1B900DD202C /* NJKWebViewProgress.m in Sources */,
+				F62DDD1D1D9E0D2D00810CC0 /* TableViewScrollHeader.m in Sources */,
 				F66087351D9CF5B400DD202C /* AnimView.m in Sources */,
+				F62DDD161D9E039D00810CC0 /* Person.m in Sources */,
 				F64FAE791D9BD9C600E7520F /* UIColor+Hex.m in Sources */,
 				F66087271D9CC8A300DD202C /* Tools.m in Sources */,
+				F62DDD191D9E03B100810CC0 /* Book.m in Sources */,
 				F64FAE591D9BD57E00E7520F /* ViewController.m in Sources */,
 				F660873F1D9D319300DD202C /* CollectionViewCell.m in Sources */,
 				F66087231D9CC1B900DD202C /* NJKWebViewProgressView.m in Sources */,
 				F64FAE561D9BD57E00E7520F /* AppDelegate.m in Sources */,
+				F62DDD201D9E12C500810CC0 /* HeadScrollView.m in Sources */,
 				F64FAE761D9BD93100E7520F /* UIColor+APPColor.m in Sources */,
 				F66087191D9CBDC400DD202C /* APPHint.m in Sources */,
 				F64FAE531D9BD57E00E7520F /* main.m in Sources */,
@@ -575,7 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/niuhome_vip/Desktop/codes/IOSDemo/IOSDemo/IOSDemo/Currency/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Currency/PrefixHeader.pch";
 				INFOPLIST_FILE = IOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wo.demos.IOSDemo;
@@ -589,7 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/niuhome_vip/Desktop/codes/IOSDemo/IOSDemo/IOSDemo/Currency/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Currency/PrefixHeader.pch";
 				INFOPLIST_FILE = IOSDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wo.demos.IOSDemo;

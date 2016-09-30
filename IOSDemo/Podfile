@@ -2,3 +2,5 @@ pod 'MJRefresh'             #下拉刷新
 pod 'SVProgressHUD'
 pod 'SDAutoLayout', '~> 1.52'
 pod 'SDWebImage'
+pod 'SDCycleScrollView'  #滑动
+pod 'YZHeaderScaleImage'
