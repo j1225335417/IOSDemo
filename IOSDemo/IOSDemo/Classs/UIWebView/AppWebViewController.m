@@ -88,5 +88,13 @@
     }
 }
 
-
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.webView stopLoading];
+    self.webView.delegate = nil;
+}
+-(void)dealloc{
+    self.webView.delegate = nil;
+    
+}
 @end

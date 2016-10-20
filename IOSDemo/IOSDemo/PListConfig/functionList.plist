@@ -6,10 +6,9 @@
 	<string>UIPickerView</string>
 	<string>UICollectionView</string>
 	<string>UITableViewScrollHeader</string>
-	<string>UIPickerView</string>
-	<string>UIPickerView</string>
-	<string>UIPickerView</string>
-	<string>UIPickerView</string>
+	<string>KitsController</string>
+	<string>LocationController</string>
+	<string>DrawSignView</string>
 	<string>UIPickerView</string>
 </array>
 </plist>

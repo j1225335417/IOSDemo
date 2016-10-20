@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9B8B13147AA5C241402BAB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CFE87012EF0091B7FFC7EA /* libPods.a */; };
+		D9B8B13147AA5C241402BAB2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04CFE87012EF0091B7FFC7EA /* libPods.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		F62DDD161D9E039D00810CC0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD151D9E039D00810CC0 /* Person.m */; };
 		F62DDD191D9E03B100810CC0 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD181D9E03B100810CC0 /* Book.m */; };
 		F62DDD1D1D9E0D2D00810CC0 /* TableViewScrollHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD1C1D9E0D2D00810CC0 /* TableViewScrollHeader.m */; };
 		F62DDD201D9E12C500810CC0 /* HeadScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */; };
+		F63265C41DAB68BC0099529B /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63265C31DAB68BC0099529B /* WKWebViewController.m */; };
+		F63265C81DAB702B0099529B /* KitsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63265C71DAB702B0099529B /* KitsController.m */; };
+		F64731B81DADE5A9005B816C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64731B71DADE5A9005B816C /* CoreFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F64731BA1DAE0E16005B816C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64731B91DAE0E16005B816C /* CoreLocation.framework */; };
+		F64731BE1DAE0E68005B816C /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64731BD1DAE0E68005B816C /* LocationController.m */; };
+		F64731C11DAE0F32005B816C /* LocationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = F64731C01DAE0F32005B816C /* LocationHandler.m */; };
+		F64731C51DAE2999005B816C /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64731C41DAE2999005B816C /* DBManager.m */; };
 		F64FAE531D9BD57E00E7520F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE521D9BD57E00E7520F /* main.m */; };
 		F64FAE561D9BD57E00E7520F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE551D9BD57E00E7520F /* AppDelegate.m */; };
 		F64FAE591D9BD57E00E7520F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FAE581D9BD57E00E7520F /* ViewController.m */; };
@@ -35,6 +42,10 @@
 		F66087351D9CF5B400DD202C /* AnimView.m in Sources */ = {isa = PBXBuildFile; fileRef = F66087341D9CF5B400DD202C /* AnimView.m */; };
 		F660873C1D9D316400DD202C /* CollectionControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F660873B1D9D316400DD202C /* CollectionControllerViewController.m */; };
 		F660873F1D9D319300DD202C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F660873E1D9D319300DD202C /* CollectionViewCell.m */; };
+		F67431B81DB860400004E134 /* DrawSignController.m in Sources */ = {isa = PBXBuildFile; fileRef = F67431B11DB860400004E134 /* DrawSignController.m */; };
+		F67431B91DB860400004E134 /* DrawSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67431B31DB860400004E134 /* DrawSignView.m */; };
+		F67431BA1DB860400004E134 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = F67431B51DB860400004E134 /* MyView.m */; };
+		F67431BB1DB860400004E134 /* PopSignUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F67431B71DB860400004E134 /* PopSignUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +60,18 @@
 		F62DDD1C1D9E0D2D00810CC0 /* TableViewScrollHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewScrollHeader.m; sourceTree = "<group>"; };
 		F62DDD1E1D9E12C500810CC0 /* HeadScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadScrollView.h; sourceTree = "<group>"; };
 		F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadScrollView.m; sourceTree = "<group>"; };
+		F63265C21DAB68BC0099529B /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		F63265C31DAB68BC0099529B /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		F63265C61DAB702B0099529B /* KitsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KitsController.h; sourceTree = "<group>"; };
+		F63265C71DAB702B0099529B /* KitsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KitsController.m; sourceTree = "<group>"; };
+		F64731B71DADE5A9005B816C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F64731B91DAE0E16005B816C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F64731BC1DAE0E68005B816C /* LocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		F64731BD1DAE0E68005B816C /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		F64731BF1DAE0F32005B816C /* LocationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHandler.h; sourceTree = "<group>"; };
+		F64731C01DAE0F32005B816C /* LocationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHandler.m; sourceTree = "<group>"; };
+		F64731C31DAE2999005B816C /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F64731C41DAE2999005B816C /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		F64FAE4E1D9BD57E00E7520F /* IOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64FAE521D9BD57E00E7520F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F64FAE541D9BD57E00E7520F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +115,14 @@
 		F660873B1D9D316400DD202C /* CollectionControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionControllerViewController.m; sourceTree = "<group>"; };
 		F660873D1D9D319300DD202C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F660873E1D9D319300DD202C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		F67431B01DB860400004E134 /* DrawSignController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawSignController.h; sourceTree = "<group>"; };
+		F67431B11DB860400004E134 /* DrawSignController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawSignController.m; sourceTree = "<group>"; };
+		F67431B21DB860400004E134 /* DrawSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawSignView.h; sourceTree = "<group>"; };
+		F67431B31DB860400004E134 /* DrawSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawSignView.m; sourceTree = "<group>"; };
+		F67431B41DB860400004E134 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		F67431B51DB860400004E134 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		F67431B61DB860400004E134 /* PopSignUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopSignUtil.h; sourceTree = "<group>"; };
+		F67431B71DB860400004E134 /* PopSignUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopSignUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64731BA1DAE0E16005B816C /* CoreLocation.framework in Frameworks */,
+				F64731B81DADE5A9005B816C /* CoreFoundation.framework in Frameworks */,
 				D9B8B13147AA5C241402BAB2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +151,8 @@
 		F4CA6858353FD062A86F08CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F64731B91DAE0E16005B816C /* CoreLocation.framework */,
+				F64731B71DADE5A9005B816C /* CoreFoundation.framework */,
 				04CFE87012EF0091B7FFC7EA /* libPods.a */,
 			);
 			name = Frameworks;
@@ -143,6 +178,44 @@
 				F62DDD1F1D9E12C500810CC0 /* HeadScrollView.m */,
 			);
 			path = UITableViewScrollHeader;
+			sourceTree = "<group>";
+		};
+		F63265C11DAB68A10099529B /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F63265C21DAB68BC0099529B /* WKWebViewController.h */,
+				F63265C31DAB68BC0099529B /* WKWebViewController.m */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		F63265C51DAB70170099529B /* kits */ = {
+			isa = PBXGroup;
+			children = (
+				F63265C61DAB702B0099529B /* KitsController.h */,
+				F63265C71DAB702B0099529B /* KitsController.m */,
+			);
+			path = kits;
+			sourceTree = "<group>";
+		};
+		F64731BB1DAE0E38005B816C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F64731BC1DAE0E68005B816C /* LocationController.h */,
+				F64731BD1DAE0E68005B816C /* LocationController.m */,
+				F64731BF1DAE0F32005B816C /* LocationHandler.h */,
+				F64731C01DAE0F32005B816C /* LocationHandler.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		F64731C21DAE2987005B816C /* Sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				F64731C31DAE2999005B816C /* DBManager.h */,
+				F64731C41DAE2999005B816C /* DBManager.m */,
+			);
+			path = Sqlite;
 			sourceTree = "<group>";
 		};
 		F64FAE451D9BD57E00E7520F = {
@@ -197,6 +270,11 @@
 		F64FAE691D9BD6F200E7520F /* Classs */ = {
 			isa = PBXGroup;
 			children = (
+				F674319F1DB85E690004E134 /* DrawSign */,
+				F64731C21DAE2987005B816C /* Sqlite */,
+				F64731BB1DAE0E38005B816C /* Location */,
+				F63265C51DAB70170099529B /* kits */,
+				F63265C11DAB68A10099529B /* WKWebView */,
 				F62DDD1A1D9E0D1600810CC0 /* UITableViewScrollHeader */,
 				F66087391D9D316400DD202C /* UICollectionView */,
 				F66087281D9CE62500DD202C /* UIPickerView */,
@@ -358,6 +436,21 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		F674319F1DB85E690004E134 /* DrawSign */ = {
+			isa = PBXGroup;
+			children = (
+				F67431B01DB860400004E134 /* DrawSignController.h */,
+				F67431B11DB860400004E134 /* DrawSignController.m */,
+				F67431B21DB860400004E134 /* DrawSignView.h */,
+				F67431B31DB860400004E134 /* DrawSignView.m */,
+				F67431B41DB860400004E134 /* MyView.h */,
+				F67431B51DB860400004E134 /* MyView.m */,
+				F67431B61DB860400004E134 /* PopSignUtil.h */,
+				F67431B71DB860400004E134 /* PopSignUtil.m */,
+			);
+			path = DrawSign;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,6 +485,7 @@
 				TargetAttributes = {
 					F64FAE4D1D9BD57E00E7520F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9MFZEC9L7U;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -483,14 +577,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67431BB1DB860400004E134 /* PopSignUtil.m in Sources */,
 				F660871C1D9CBEB900DD202C /* NJBProgressContentView.m in Sources */,
 				F64FAE7E1D9BEAB700E7520F /* AppWebViewController.m in Sources */,
+				F67431B81DB860400004E134 /* DrawSignController.m in Sources */,
+				F67431BA1DB860400004E134 /* MyView.m in Sources */,
+				F63265C81DAB702B0099529B /* KitsController.m in Sources */,
 				F66087151D9CB9BB00DD202C /* WebViewJavascriptBridge.m in Sources */,
 				F64FAE711D9BD8AA00E7520F /* BaseNavigationController.m in Sources */,
 				F66087221D9CC1B900DD202C /* NJKWebViewProgress.m in Sources */,
+				F63265C41DAB68BC0099529B /* WKWebViewController.m in Sources */,
 				F62DDD1D1D9E0D2D00810CC0 /* TableViewScrollHeader.m in Sources */,
 				F66087351D9CF5B400DD202C /* AnimView.m in Sources */,
 				F62DDD161D9E039D00810CC0 /* Person.m in Sources */,
+				F67431B91DB860400004E134 /* DrawSignView.m in Sources */,
 				F64FAE791D9BD9C600E7520F /* UIColor+Hex.m in Sources */,
 				F66087271D9CC8A300DD202C /* Tools.m in Sources */,
 				F62DDD191D9E03B100810CC0 /* Book.m in Sources */,
@@ -499,11 +599,14 @@
 				F66087231D9CC1B900DD202C /* NJKWebViewProgressView.m in Sources */,
 				F64FAE561D9BD57E00E7520F /* AppDelegate.m in Sources */,
 				F62DDD201D9E12C500810CC0 /* HeadScrollView.m in Sources */,
+				F64731C11DAE0F32005B816C /* LocationHandler.m in Sources */,
 				F64FAE761D9BD93100E7520F /* UIColor+APPColor.m in Sources */,
 				F66087191D9CBDC400DD202C /* APPHint.m in Sources */,
+				F64731BE1DAE0E68005B816C /* LocationController.m in Sources */,
 				F64FAE531D9BD57E00E7520F /* main.m in Sources */,
 				F660873C1D9D316400DD202C /* CollectionControllerViewController.m in Sources */,
 				F660872B1D9CE65900DD202C /* UIPickerController.m in Sources */,
+				F64731C51DAE2999005B816C /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,9 +717,11 @@
 			baseConfigurationReference = D1C6F2C1DBABDFED8EB2E46F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9MFZEC9L7U;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Currency/PrefixHeader.pch";
 				INFOPLIST_FILE = IOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wo.demos.IOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,9 +733,11 @@
 			baseConfigurationReference = 7AD0979C17E4C190F8D3742D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9MFZEC9L7U;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Currency/PrefixHeader.pch";
 				INFOPLIST_FILE = IOSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wo.demos.IOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

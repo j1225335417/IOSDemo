@@ -13,10 +13,11 @@
 #import "MJRefreshGifHeader.h"
 #import "CollectionControllerViewController.h"
 #import "TableViewScrollHeader.h"
-
-
+#import "KitsController.h"
+#import "LocationController.h"
 #import "Person.h"
 #import "Book.h"
+#import "DrawSignController.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong) NSArray *dataArray;
 @property(nonatomic,strong)UITableView *tableView;
@@ -60,7 +61,7 @@ static ViewController *viewController;
 -(void) initDataArray{
     NSString * plistPath = [[NSBundle mainBundle] pathForResource:@"functionList" ofType:@"plist"];
     _dataArray = [[NSArray alloc]initWithContentsOfFile:plistPath];
-    NSLog(@"%@",_dataArray);
+//    NSLog(@"%@",_dataArray);
     [_tableView.mj_header endRefreshing];
     [_tableView reloadData];
 }
@@ -81,10 +82,10 @@ static ViewController *viewController;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%ld",indexPath.row);
+//    NSLog(@"%ld",indexPath.row);
     if(0 == indexPath.row){
         AppWebViewController *vc = [[AppWebViewController alloc]init];
-        [self.navigationController pushViewController:vc animated:NO];
+        [self.navigationController pushViewController:vc animated:YES];
     }else if(1 == indexPath.row){
         UIPickerController *vc = [[UIPickerController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
@@ -93,6 +94,17 @@ static ViewController *viewController;
         [self.navigationController pushViewController:vc animated:YES];
     }else if (3 == indexPath.row){
         TableViewScrollHeader * vc = [[TableViewScrollHeader alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(4 == indexPath.row){
+        KitsController *vc = [[KitsController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if(5 == indexPath.row){
+        LocationController *vc = [[LocationController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (6 == indexPath.row){
+        DrawSignController *vc = [[DrawSignController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

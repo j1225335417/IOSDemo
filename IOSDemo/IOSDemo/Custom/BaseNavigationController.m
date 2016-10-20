@@ -8,6 +8,7 @@
 
 #import "BaseNavigationController.h"
 #import "UIColor+APPColor.h"
+#import "DrawSignController.h"
 @interface BaseNavigationController ()
 
 @end
@@ -23,19 +24,35 @@
     self.navigationBar.barTintColor = [UIColor themeGreenColor];
     self.navigationBar.translucent = NO;
     //去掉比不黑线
-    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-    self.navigationController.navigationBar.translucent = YES;
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
-    self.navigationController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
-    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+//    self.navigationController.navigationBar.translucent = YES;
+//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+//    self.navigationController.tabBarItem.titlePositionAdjustment = UIOffsetMake(0, -3);
+//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return toInterfaceOrientation != UIDeviceOrientationPortraitUpsideDown;
+}
 
+- (BOOL)shouldAutorotate
+{
+    if ([self.topViewController isKindOfClass:[DrawSignController class]]) { // 如果是这个 vc 则支持自动旋转
+        return YES;
+    }
+    return NO;
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
 /*
 #pragma mark - Navigation
 

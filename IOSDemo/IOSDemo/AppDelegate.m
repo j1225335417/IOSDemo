@@ -23,6 +23,8 @@
     ViewController *vc = [ViewController sharedController];
     BaseNavigationController *nav = [[BaseNavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController  =nav;
+    CGRect frame = [UIScreen mainScreen].bounds;
+    self.window.frame = CGRectMake(0, 0, frame.size.width+0.000001, frame.size.height+0.000001);
     [self.window makeKeyAndVisible];
     return YES;
 }
